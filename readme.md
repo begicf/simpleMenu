@@ -9,11 +9,14 @@ php artisan migrate
 
 ### How to use
 
-Put in view blade template **<x-menu-menu-component />**
+Put in view blade template 
+```
+<x-menu-menu-component />
+```
 ### Example  
  ``` html
-                <ul class="navbar-nav mr-auto">
-                    <x-menu-menu-component />
-                </ul>
+<ul class="navbar-nav mr-auto">
+  <x-menu-menu-component />
+</ul>
  ```
  
