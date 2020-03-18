@@ -1,10 +1,10 @@
  
- ### Laravel simple Menu from data source
+### Laravel simple Menu from data source
 
-####Install
+###Install
 composer require begicf/simple-menu
 
-####Migrate 
+###Migrate 
 php artisan migrate
  
  
