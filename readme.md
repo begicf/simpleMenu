@@ -1,3 +1,5 @@
  
- php artisan migrate:fresh --seed
+ ### Laravel simple Menu from data source
+
+ php artisan migrate
  

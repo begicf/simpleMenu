@@ -4,7 +4,7 @@ namespace simpleMenu;
 
 use Illuminate\View\Component;
 use Illuminate\Support\Facades\View;
-use simpleMenu\model\Menu;
+use simpleMenu\model\MenuModel;
 
 class MenuComponent extends Component
 {
@@ -25,7 +25,7 @@ class MenuComponent extends Component
      */
     public function render()
     {
-        $items=Menu::tree();
+        $items=MenuModel::tree();
 
         return View::file(__DIR__.'/views/components/cmenu.blade.php',['items'=>$items]);
     }

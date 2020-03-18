@@ -6,7 +6,7 @@ namespace simpleMenu\model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Menu extends Model
+class MenuModel extends Model
 {
 
     public $timestamps = false;
@@ -17,13 +17,13 @@ class Menu extends Model
 
     public function parent() {
 
-        return $this->hasOne('simpleMenu\model\Menu', 'id', 'parent_id');
+        return $this->hasOne('simpleMenu\model\MenuModel', 'id', 'parent_id');
 
     }
 
     public function children() {
 
-        return $this->hasMany('simpleMenu\model\Menu', 'parent_id', 'id');
+        return $this->hasMany('simpleMenu\model\MenuModel', 'parent_id', 'id');
 
     }
 
