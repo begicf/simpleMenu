@@ -16,7 +16,7 @@ class SimpleMenuServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('simpleMenu\MenuController');
+
     }
 
     /**
@@ -27,11 +27,12 @@ class SimpleMenuServiceProvider extends ServiceProvider
     public function boot()
     {
 
-        $this->loadRoutesFrom(__DIR__.'/routes.php');
         $this->loadMigrationsFrom(__DIR__.'/migrations');
+
         $this->publishes([
             __DIR__.'/views' => resource_path('views/vendor/menu'),
         ]);
+
         $this->loadViewComponentsAs('menu',[MenuComponent::class]);
 
 
