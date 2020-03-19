@@ -30,7 +30,7 @@ class SimpleMenuServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/migrations');
 
         $this->publishes([
-            __DIR__.'/views' => resource_path('views/vendor/menu'),
+            __DIR__.'/views' => resource_path('views/vendor/menu/components/'),
         ]);
 
         $this->loadViewComponentsAs('menu',[MenuComponent::class]);

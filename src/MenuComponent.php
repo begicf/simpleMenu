@@ -25,8 +25,12 @@ class MenuComponent extends Component
      */
     public function render()
     {
-        $items=MenuModel::tree();
+        $items = MenuModel::tree();
 
-        return View::file(__DIR__.'/views/components/cmenu.blade.php',['items'=>$items]);
+        if (View::exists('views/vendor/menu/components')):
+            return view('views.vendor.menu.components.cmenu');
+        else:
+            return View::file(__DIR__ . '/views/components/cmenu.blade.php', ['items' => $items]);
+        endif;
     }
 }
