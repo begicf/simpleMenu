@@ -4,7 +4,7 @@ namespace SimpleMenu;
 
 use Illuminate\View\Component;
 use Illuminate\Support\Facades\View;
-use simpleMenu\model\MenuModel;
+use SimpleMenu\model\MenuModel;
 
 class MenuComponent extends Component
 {
