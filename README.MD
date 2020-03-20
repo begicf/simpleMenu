@@ -37,14 +37,22 @@ Put in view blade template
 ```
 <x-menu-menu-component />
 ```
+
+### Publish resources 
+```
+php artisan vendor:publish --provider="SimpleMenu\SimpleMenuServiceProvider"
+
+ ```
 ### Example  
  ``` html
 <ul class="navbar-nav mr-auto">
   <x-menu-menu-component />
 </ul>
  ```
-### Publish resources 
-```
-php artisan vendor:publish --provider="SimpleMenu\SimpleMenuServiceProvider"
 
- ```
+![Image1](https://raw.githubusercontent.com/begicf/simpleMenu/master/images/img_1.png)
+
+![Image2](https://raw.githubusercontent.com/begicf/simpleMenu/master/images/img_2.png)
+
+
+
