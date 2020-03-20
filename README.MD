@@ -9,7 +9,7 @@ composer require begicf/simple-menu
 ### Register Service Provider
 Go in 'config/app.php' file.
 
-Find array **providers** and add this element:
+Find array **providers** and add this element to register provider:
 ```
 \SimpleMenu\SimpleMenuServiceProvider::class
 ```
