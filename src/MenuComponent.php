@@ -27,8 +27,8 @@ class MenuComponent extends Component
     {
         $items = MenuModel::tree();
 
-        if (View::exists('views/vendor/menu/components')):
-            return view('views.vendor.menu.components.cmenu');
+        if (View::exists('vendor.menu.components.cmenu')):
+            return view('vendor.menu.components.cmenu', ['items' => $items]);
         else:
             return View::file(__DIR__ . '/views/components/cmenu.blade.php', ['items' => $items]);
         endif;
