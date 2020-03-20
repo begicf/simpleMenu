@@ -1,7 +1,7 @@
 <?php
 
 
-namespace simpleMenu\model;
+namespace SimpleMenu\model;
 
 
 use Illuminate\Database\Eloquent\Model;

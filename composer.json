@@ -13,5 +13,10 @@
 
         "php": "^7.2.5",
         "laravel/framework": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SimpleMenu\\": "src/"
+        }
     }
 }

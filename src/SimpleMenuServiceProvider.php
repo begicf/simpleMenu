@@ -1,6 +1,6 @@
 <?php
 
-namespace simpleMenu;
+namespace SimpleMenu;
 
 use Illuminate\Support\ServiceProvider;
 
