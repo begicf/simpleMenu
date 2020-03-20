@@ -49,10 +49,12 @@ php artisan vendor:publish --provider="SimpleMenu\SimpleMenuServiceProvider"
   <x-menu-menu-component />
 </ul>
  ```
+##### Image 1
+![Image2](https://raw.githubusercontent.com/begicf/simpleMenu/master/images/img_2.png)
 
+##### Image 2
 ![Image1](https://raw.githubusercontent.com/begicf/simpleMenu/master/images/img_1.png)
 
-![Image2](https://raw.githubusercontent.com/begicf/simpleMenu/master/images/img_2.png)
 
 
 
