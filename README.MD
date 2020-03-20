@@ -15,8 +15,9 @@ Find array **providers** and add this element to register provider:
 ```
 
 ### Migrate 
+```
 php artisan migrate
-
+```
 SQL Menu table
 
 | Name | Type |
