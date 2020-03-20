@@ -17,6 +17,19 @@ Find array **providers** and add this element to register provider:
 ### Migrate 
 php artisan migrate
 
+SQL Menu table
+
+| Name | Type |
+| --- | --- |
+| id | int |
+| parent_id | int |
+| title | varchar (255)|
+| description | varchar (255)|
+| order | int|
+| created_at | timestamp|
+| update_at | timestamp|
+
+
 ### How to use
 
 Put in view blade template 
