@@ -35,7 +35,7 @@ SQL Menu table
 
 Put in view blade template 
 ```
-<x-menu-menu-component />
+<x-menu-menu-component type="v" />
 ```
 
 ### Publish resources 
@@ -46,7 +46,7 @@ php artisan vendor:publish --provider="SimpleMenu\SimpleMenuServiceProvider"
 ### Example  
  ``` html
 <ul class="navbar-nav mr-auto">
-  <x-menu-menu-component />
+  <x-menu-menu-component type="v" />
 </ul>
  ```
 ##### Image 1

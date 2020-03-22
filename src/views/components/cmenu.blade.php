@@ -1,4 +1,4 @@
-<div>
+<p>
 
     @foreach($items as $item)
 
@@ -13,18 +13,18 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     @foreach($item['children'] as $child)
-                        <a class="dropdown-item" href="{{$child->link}}">{{ $child->title }}</a>
+                        <a class="dropdown-item" href="{{$child->url}}">{{ $child->title }}</a>
                     @endforeach
                 </div>
             </li>
 
         @else
 
-            <a class="nav-link" href="{{$item->link}}">{{ $item->title }}</a>
+            <a class="nav-link" href="{{$item->url}}">{{ $item->title }}</a>
 
         @endif
 
         </li>
 
     @endforeach
-</div>
+</p>
