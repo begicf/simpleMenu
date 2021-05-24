@@ -1,4 +1,4 @@
-<template>
+
 
     @foreach($items as $item)
 
@@ -28,4 +28,4 @@
 
     @endforeach
 
-</template>
+
