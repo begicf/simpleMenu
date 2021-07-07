@@ -1,6 +1,4 @@
-
-
-    @foreach($items as $item)
+@foreach($items as $item)
 
         <li class="nav-item">
 
@@ -13,19 +11,18 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     @foreach($item['children'] as $child)
-                        <a class="dropdown-item" href="{{$child->url}}">{{ $child->title }}</a>
+                        <a class="dropdown-item {{ (request()->is($child->url)) ? 'active' : '' }}" href="{{$child->url}}">{{ $child->title }}</a>
                     @endforeach
                 </div>
             </li>
 
         @else
 
-            <a class="nav-link" href="{{$item->url}}">{{ $item->title }}</a>
+            <a class="nav-link {{ (request()->is($item->url)) ? 'active' : '' }}" href="{{$item->url}}">{{ $item->title }}</a>
 
         @endif
 
         </li>
-
-    @endforeach
+@endforeach
 
 
