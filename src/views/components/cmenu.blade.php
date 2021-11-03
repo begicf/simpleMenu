@@ -18,7 +18,7 @@
 
         @else
 
-            <a class="nav-link {{ (request()->is($item->url)) ? 'active' : '' }}" href="/{{$item->url}}">{{ $item->title }}</a>
+            <a class="nav-link {{ (request()->is($item->url)) ? 'active' : '' }}" href="{{url($item->url)}}">{{ $item->title }}</a>
 
         @endif
 
